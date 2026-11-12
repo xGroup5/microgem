@@ -1,0 +1,429 @@
+{
+  "note": "For each sequence, `expected` is the probability the shipped probe gives it on the export host's reference Torch embedding path. `role=drift` sequences sit in the un-saturated band and are the sensitive check; `role=positive` sequences are the per-panel positive control. microgem selftest requires |observed - expected| <= 1e-3 and no positive control below its cut-off.",
+  "tolerance": 0.001,
+  "sequences": [
+    {
+      "id": "FATE-L-modifying|Q7VDH8",
+      "source_panel": "FATE-L-modifying",
+      "role": "drift",
+      "length": 224,
+      "expected_logit": -24.157318,
+      "expected_probability": 0.0,
+      "cutoff": 0.25
+    },
+    {
+      "id": "FATE-L-modifying|Q5P2U7",
+      "source_panel": "FATE-L-modifying",
+      "role": "drift",
+      "length": 353,
+      "expected_logit": -11.513254,
+      "expected_probability": 1e-05,
+      "cutoff": 0.25
+    },
+    {
+      "id": "FATE-L-releasing|A6V383",
+      "source_panel": "FATE-L-releasing",
+      "role": "drift",
+      "length": 391,
+      "expected_logit": -2.883993,
+      "expected_probability": 0.052951,
+      "cutoff": 0.3
+    },
+    {
+      "id": "FATE-S|Q40353",
+      "source_panel": "FATE-S",
+      "role": "drift",
+      "length": 371,
+      "expected_logit": -22.196541,
+      "expected_probability": 0.0,
+      "cutoff": 0.2
+    },
+    {
+      "id": "FATE-S|A7M961",
+      "source_panel": "FATE-S",
+      "role": "drift",
+      "length": 353,
+      "expected_logit": -9.306208,
+      "expected_probability": 9.1e-05,
+      "cutoff": 0.2
+    },
+    {
+      "id": "SATE|Q561L6",
+      "source_panel": "SATE",
+      "role": "drift",
+      "length": 438,
+      "expected_logit": -2.940004,
+      "expected_probability": 0.050211,
+      "cutoff": 0.3
+    },
+    {
+      "id": "SATE|Q12039",
+      "source_panel": "SATE",
+      "role": "drift",
+      "length": 706,
+      "expected_logit": -2.51037,
+      "expected_probability": 0.075134,
+      "cutoff": 0.3
+    },
+    {
+      "id": "SALE|B7NNP4",
+      "source_panel": "SALE",
+      "role": "drift",
+      "length": 167,
+      "expected_logit": -36.856976,
+      "expected_probability": 0.0,
+      "cutoff": 0.2
+    },
+    {
+      "id": "SALE|Q2KWI6",
+      "source_panel": "SALE",
+      "role": "drift",
+      "length": 718,
+      "expected_logit": -13.023211,
+      "expected_probability": 2e-06,
+      "cutoff": 0.2
+    },
+    {
+      "id": "AATE-hydrolysis|P66901",
+      "source_panel": "AATE-hydrolysis",
+      "role": "drift",
+      "length": 398,
+      "expected_logit": -2.510075,
+      "expected_probability": 0.075155,
+      "cutoff": 0.4
+    },
+    {
+      "id": "AATE-redox|P23219",
+      "source_panel": "AATE-redox",
+      "role": "drift",
+      "length": 599,
+      "expected_logit": -2.558972,
+      "expected_probability": 0.071826,
+      "cutoff": 0.65
+    },
+    {
+      "id": "AATE-redox|A2Z7B3",
+      "source_panel": "AATE-redox",
+      "role": "drift",
+      "length": 378,
+      "expected_logit": -2.099254,
+      "expected_probability": 0.109169,
+      "cutoff": 0.65
+    },
+    {
+      "id": "AATE-lyase|Q13YI7",
+      "source_panel": "AATE-lyase",
+      "role": "drift",
+      "length": 389,
+      "expected_logit": -2.94317,
+      "expected_probability": 0.05006,
+      "cutoff": 0.2
+    },
+    {
+      "id": "AATE-lyase|A2SQB8",
+      "source_panel": "AATE-lyase",
+      "role": "drift",
+      "length": 392,
+      "expected_logit": -1.433814,
+      "expected_probability": 0.192505,
+      "cutoff": 0.2
+    },
+    {
+      "id": "AATE-ligase|Q8L172",
+      "source_panel": "AATE-ligase",
+      "role": "drift",
+      "length": 551,
+      "expected_logit": -48.045787,
+      "expected_probability": 0.0,
+      "cutoff": 0.6
+    },
+    {
+      "id": "AATE-ligase|A4FQ08",
+      "source_panel": "AATE-ligase",
+      "role": "drift",
+      "length": 433,
+      "expected_logit": -18.398784,
+      "expected_probability": 0.0,
+      "cutoff": 0.6
+    },
+    {
+      "id": "AATE-CoA|Q8KP37",
+      "source_panel": "AATE-CoA",
+      "role": "drift",
+      "length": 206,
+      "expected_logit": -20.815309,
+      "expected_probability": 0.0,
+      "cutoff": 0.3
+    },
+    {
+      "id": "AATE-CoA|Q8K3P0",
+      "source_panel": "AATE-CoA",
+      "role": "drift",
+      "length": 313,
+      "expected_logit": -9.338688,
+      "expected_probability": 8.8e-05,
+      "cutoff": 0.3
+    },
+    {
+      "id": "TRP|Q32Q92",
+      "source_panel": "TRP",
+      "role": "drift",
+      "length": 419,
+      "expected_logit": -2.565245,
+      "expected_probability": 0.071409,
+      "cutoff": 0.4
+    },
+    {
+      "id": "TRP|O81000",
+      "source_panel": "TRP",
+      "role": "drift",
+      "length": 585,
+      "expected_logit": -2.465275,
+      "expected_probability": 0.078329,
+      "cutoff": 0.4
+    },
+    {
+      "id": "PLY|Q9ZAA1",
+      "source_panel": "PLY",
+      "role": "drift",
+      "length": 506,
+      "expected_logit": -2.931182,
+      "expected_probability": 0.050633,
+      "cutoff": 0.45
+    },
+    {
+      "id": "ARO|A0A0S1RUN4",
+      "source_panel": "ARO",
+      "role": "drift",
+      "length": 953,
+      "expected_logit": -2.816616,
+      "expected_probability": 0.056433,
+      "cutoff": 0.55
+    },
+    {
+      "id": "ARO|O65402",
+      "source_panel": "ARO",
+      "role": "drift",
+      "length": 517,
+      "expected_logit": -2.525341,
+      "expected_probability": 0.074101,
+      "cutoff": 0.55
+    },
+    {
+      "id": "VIT|Q72YW2",
+      "source_panel": "VIT",
+      "role": "drift",
+      "length": 200,
+      "expected_logit": -2.786316,
+      "expected_probability": 0.058068,
+      "cutoff": 0.8
+    },
+    {
+      "id": "VIT|C1FI13",
+      "source_panel": "VIT",
+      "role": "drift",
+      "length": 196,
+      "expected_logit": -2.031711,
+      "expected_probability": 0.115913,
+      "cutoff": 0.8
+    },
+    {
+      "id": "RDX|F1SVN3",
+      "source_panel": "RDX",
+      "role": "drift",
+      "length": 676,
+      "expected_logit": -2.652377,
+      "expected_probability": 0.065843,
+      "cutoff": 0.2
+    },
+    {
+      "id": "RDX|Q9LW27",
+      "source_panel": "RDX",
+      "role": "drift",
+      "length": 490,
+      "expected_logit": -1.28367,
+      "expected_probability": 0.216926,
+      "cutoff": 0.2
+    },
+    {
+      "id": "GLY|B6ZKM4",
+      "source_panel": "GLY",
+      "role": "drift",
+      "length": 543,
+      "expected_logit": -2.296735,
+      "expected_probability": 0.091394,
+      "cutoff": 0.2
+    },
+    {
+      "id": "BA|Q5UYV8",
+      "source_panel": "BA",
+      "role": "drift",
+      "length": 367,
+      "expected_logit": -15.01678,
+      "expected_probability": 0.0,
+      "cutoff": 0.8
+    },
+    {
+      "id": "BA|A4WWA0",
+      "source_panel": "BA",
+      "role": "drift",
+      "length": 268,
+      "expected_logit": -9.20718,
+      "expected_probability": 0.0001,
+      "cutoff": 0.8
+    },
+    {
+      "id": "FATE-L-modifying|Q96GR2",
+      "source_panel": "FATE-L-modifying",
+      "role": "positive",
+      "length": 724,
+      "expected_logit": 9.418476,
+      "expected_probability": 0.999919,
+      "cutoff": 0.25
+    },
+    {
+      "id": "FATE-L-releasing|Q8VBX1",
+      "source_panel": "FATE-L-releasing",
+      "role": "positive",
+      "length": 493,
+      "expected_logit": 12.000792,
+      "expected_probability": 0.999994,
+      "cutoff": 0.3
+    },
+    {
+      "id": "FATE-S|A6LP38",
+      "source_panel": "FATE-S",
+      "role": "positive",
+      "length": 425,
+      "expected_logit": 9.820579,
+      "expected_probability": 0.999946,
+      "cutoff": 0.2
+    },
+    {
+      "id": "SATE|Q9HBK9",
+      "source_panel": "SATE",
+      "role": "positive",
+      "length": 375,
+      "expected_logit": 13.666846,
+      "expected_probability": 0.999999,
+      "cutoff": 0.3
+    },
+    {
+      "id": "SALE|A6Q6D8",
+      "source_panel": "SALE",
+      "role": "positive",
+      "length": 285,
+      "expected_logit": 12.850874,
+      "expected_probability": 0.999997,
+      "cutoff": 0.2
+    },
+    {
+      "id": "AATE-hydrolysis|Q6LPA3",
+      "source_panel": "AATE-hydrolysis",
+      "role": "positive",
+      "length": 269,
+      "expected_logit": 12.744246,
+      "expected_probability": 0.999997,
+      "cutoff": 0.4
+    },
+    {
+      "id": "AATE-redox|P55023",
+      "source_panel": "AATE-redox",
+      "role": "positive",
+      "length": 273,
+      "expected_logit": 8.472397,
+      "expected_probability": 0.999791,
+      "cutoff": 0.65
+    },
+    {
+      "id": "AATE-lyase|Q833S7",
+      "source_panel": "AATE-lyase",
+      "role": "positive",
+      "length": 131,
+      "expected_logit": 18.129605,
+      "expected_probability": 1.0,
+      "cutoff": 0.2
+    },
+    {
+      "id": "AATE-ligase|Q24UG7",
+      "source_panel": "AATE-ligase",
+      "role": "positive",
+      "length": 575,
+      "expected_logit": 24.506409,
+      "expected_probability": 1.0,
+      "cutoff": 0.6
+    },
+    {
+      "id": "AATE-CoA|B2B4X6",
+      "source_panel": "AATE-CoA",
+      "role": "positive",
+      "length": 468,
+      "expected_logit": 16.059779,
+      "expected_probability": 1.0,
+      "cutoff": 0.3
+    },
+    {
+      "id": "TRP|Q5WY16",
+      "source_panel": "TRP",
+      "role": "positive",
+      "length": 449,
+      "expected_logit": 6.486567,
+      "expected_probability": 0.998479,
+      "cutoff": 0.4
+    },
+    {
+      "id": "PLY|Q5SK28",
+      "source_panel": "PLY",
+      "role": "positive",
+      "length": 314,
+      "expected_logit": 13.2902,
+      "expected_probability": 0.999998,
+      "cutoff": 0.45
+    },
+    {
+      "id": "ARO|A3PQD8",
+      "source_panel": "ARO",
+      "role": "positive",
+      "length": 196,
+      "expected_logit": 10.596147,
+      "expected_probability": 0.999975,
+      "cutoff": 0.55
+    },
+    {
+      "id": "VIT|Q39QR1",
+      "source_panel": "VIT",
+      "role": "positive",
+      "length": 216,
+      "expected_logit": 9.449635,
+      "expected_probability": 0.999921,
+      "cutoff": 0.8
+    },
+    {
+      "id": "RDX|A1JIU0",
+      "source_panel": "RDX",
+      "role": "positive",
+      "length": 212,
+      "expected_logit": 13.41351,
+      "expected_probability": 0.999999,
+      "cutoff": 0.2
+    },
+    {
+      "id": "GLY|Q8H116",
+      "source_panel": "GLY",
+      "role": "positive",
+      "length": 572,
+      "expected_logit": 13.684989,
+      "expected_probability": 0.999999,
+      "cutoff": 0.2
+    },
+    {
+      "id": "BA|Q29608",
+      "source_panel": "BA",
+      "role": "positive",
+      "length": 291,
+      "expected_logit": 7.87741,
+      "expected_probability": 0.999621,
+      "cutoff": 0.8
+    }
+  ]
+}

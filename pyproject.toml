@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microgem"
+version = "1.0.0"
+description = "Score microbial proteins against 17 microbial-enzyme panels (FATE, SATE, SALE, AATE, GLY, TRP, PLY, ARO, VIT, RDX, BA)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jun Xu" }]
+keywords = ["metagenomics", "enzyme", "protein language model", "ESM-2", "microbiome", "IBD"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+# The fast path. Without these, microgem still works through `microgem download
+# --convert`, but that conversion itself needs torch, so a torch-capable machine
+# has to touch the install at least once.
+torch = [
+    "torch>=2.0",
+    "fair-esm>=2.0",
+]
+dev = [
+    "pytest>=7",
+    "torch>=2.0",
+    "fair-esm>=2.0",
+]
+
+[project.scripts]
+microgem = "microgem.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["microgem*"]
+
+[tool.setuptools.package-data]
+microgem = ["assets/*.npz", "assets/*.json", "assets/*.faa", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error::RuntimeWarning"]

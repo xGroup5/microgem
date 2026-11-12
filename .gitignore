@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Model weights: 2.6 GB, downloaded on demand, never committed
+*.pt
+*.pth
+*.npz.tmp
+esm2_*_numpy/
+
+# Local scratch
+*.log
+.DS_Store

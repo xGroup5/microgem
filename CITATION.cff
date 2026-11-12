@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use microGEM, please cite this file."
+type: software
+title: "microGEM: sequence-based scoring of 17 microbial enzyme chemistries with an explicitly calibrated, distribution-ready classifier"
+authors:
+  - family-names: Xu
+    given-names: Jun
+year: 2026
+url: "https://github.com/xGroup5/microgem"
+repository-code: "https://github.com/xGroup5/microgem"
+license: MIT
+abstract: >-
+  microGEM scores uncharacterised microbial proteins against seventeen enzyme
+  chemistries relevant to mucosal biology, using a frozen ESM-2 650M embedding
+  and one calibrated linear probe per panel. The package reports per-panel
+  reliability tiers, prevalence-adjusted precision and a decision margin, and
+  ships with an installation self-test.
+keywords:
+  - metagenomics
+  - enzyme function prediction
+  - protein language model
+  - ESM-2
+  - calibration
+  - microbiome
+references:
+  - type: article
+    title: "Identification of gut microbial bile acid metabolic enzymes via an AI-assisted pipeline"
+    authors:
+      - family-names: Ding
+        given-names: Y.
+      - family-names: Luo
+        given-names: X.
+      - family-names: Guo
+        given-names: J.
+    journal: Cell
+    volume: 188
+    issue: 21
+    start: 6012
+    end: 6027.e20
+    year: 2025
+    doi: 10.1016/j.cell.2025.07.017
+  - type: article
+    title: "Enzyme annotation in UniProtKB using Rhea"
+    authors:
+      - family-names: Morgat
+        given-names: A.
+      - family-names: Lombardot
+        given-names: T.
+      - family-names: Coudert
+        given-names: E.
+    journal: Bioinformatics
+    volume: 36
+    issue: 6
+    start: 1896
+    end: 1901
+    year: 2020
+    doi: 10.1093/bioinformatics/btz817
